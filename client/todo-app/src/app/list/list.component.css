@@ -1,0 +1,43 @@
+input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+}
+
+.list-container {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.task-title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.checkbox-container {
+    margin-top: 1rem;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.checkbox-container label, select, button {
+    margin: 1rem;    
+    overflow: auto;
+    width: 15rem;
+    text-transform: capitalize;
+}
+
+.delete {
+    border: none;
+    background-color: var(--white);
+    transition: transform 0.3s;
+}
+
+.delete:hover{
+    transform: translateY(-3px);
+}   
+
+
+
+

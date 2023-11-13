@@ -1,0 +1,12 @@
+<section class="form-section">
+    <form class="form-container" >     
+        <!-- [formGroup]="taskForm" -->
+        <!-- (ngSubmit)="createTask()" -->
+        <label for="description"></label>
+        <input type="text" name="description" id="description" placeholder="Get it done" [(ngModel)]="taskToAdd" >    
+        <button type="submit" (click)="addTask()">Add</button>        
+    </form>
+    
+</section>
+
+

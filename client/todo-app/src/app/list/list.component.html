@@ -1,0 +1,34 @@
+<app-task (taskList)="taskListHandler($event)"></app-task> 
+<section class="list-container">
+    <table  class="checkbox-container">
+        <thead>
+            <tr>                
+                <th>Your Task</th>
+                <th>Importance</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let task of allTask2;  index as i">
+            <tr>
+                <td>
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox">{{task.description}}</label>                 
+                </td>                
+                <td>
+                    <select>
+                        <option selected disabled>Select</option>
+                        <option value="Normal">Normal</option>
+                        <option value="Important">Important</option>
+                        <option value="Urgent">Urgent</option>
+                    </select>
+                </td>
+                <td>
+                    <button (click)="onDelete(i, task._id)" class="delete">
+                        <img src="../../assets/trash-bin.svg" >
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+          
+    </table>
+</section>

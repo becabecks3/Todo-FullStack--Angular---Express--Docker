@@ -1,0 +1,16 @@
+.title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.main-title{
+    font-size: 3.5rem;
+    letter-spacing: 0.8rem;    
+}
+.slogan-title{
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
