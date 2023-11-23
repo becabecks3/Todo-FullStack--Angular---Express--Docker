@@ -5,13 +5,14 @@ Todo application to keep your errands organized. It has been developed with Angu
  1. Clone de repository 
 
 
-        `git clone git@gitlab.rdwd.intra.bender:madrid/rebeca-todo.git`
+       `git clone git@gitlab.rdwd.intra.bender:madrid/rebeca-todo.git`
 
-        `cd rebeca-todo`
+       `cd rebeca-todo`
+
  2. Install dependecies
 
 
-        `npm i`  
+       `npm i`  
  3. Set you environment varibles. Create a .env at the indicated level and edit the following with the values needed.
  ~~~
     At the same level of your compose.yaml 
