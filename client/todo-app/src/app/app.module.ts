@@ -8,7 +8,6 @@ import { TaskComponent } from './task/task.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ServiceDbService } from './service-db.service';
 import { HttpClientModule } from "@angular/common/http";
-import { IconsModule } from '@progress/kendo-angular-icons';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
@@ -25,7 +24,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    IconsModule,
     BrowserAnimationsModule
   ],
   providers: [ServiceDbService],
