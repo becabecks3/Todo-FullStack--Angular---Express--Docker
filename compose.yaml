@@ -1,0 +1,25 @@
+version: '2'
+
+services:
+  web:
+    build:
+      context: ./client/todo-app
+      dockerfile: Dockerfile
+      args:
+        - NG_APP_API_URL=${NG_APP_API_URL}
+    ports:
+      - ${YOUR_IP}:${FRONTEND_PORT}:80 
+    depends_on: 
+      - database
+    
+
+  database:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+      args:
+        - MG_CONECTION=${MG_CONECTION}
+        - BACKEND_LISTEN_PORT=${BACKEND_LISTEN_PORT}
+    ports:
+      - ${YOUR_IP}:${BACKEND_PORT}:2000
+    

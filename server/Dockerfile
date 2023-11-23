@@ -1,0 +1,15 @@
+FROM node:latest
+WORKDIR /server
+COPY package*.json ./
+RUN npm i 
+
+ARG BACKEND_LISTEN_PORT
+ARG MG_CONECTION
+
+COPY . .
+
+RUN echo  BACKEND_LISTEN_PORT=${BACKEND_LISTEN_PORT} > .env
+RUN echo  MG_CONECTION=${MG_CONECTION} >> .env
+
+CMD ["npm", "start"]
+EXPOSE 3000
