@@ -1,11 +1,16 @@
 ## ToDo Practice
-Todo application to keep your errands organized. It has been developed with Angular on the frontend and with NodeJs and Express on the backend, alongside CosmosDb as database.
+Todo application to keep your errands organized. It has been developed with Angular on the frontend and with NodeJs and Express on the backend, alongside CosmosDb-MongoDb as database. For deployment it is set to use Docker Compose
 
 ## Installation
  1. Clone de repository 
+
+
         `git clone git@gitlab.rdwd.intra.bender:madrid/rebeca-todo.git`
+
         `cd rebeca-todo`
  2. Install dependecies
+
+
         `npm i`  
  3. Set you environment varibles. Create a .env at the indicated level and edit the following with the values needed.
  ~~~
@@ -31,6 +36,8 @@ Todo application to keep your errands organized. It has been developed with Angu
 
 
  4. Deploy with Docker compose
+
+
     `docker compose up`
 
 
