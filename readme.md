@@ -30,11 +30,9 @@ Todo application to keep your errands organized. It has been developed with Angu
  ~~~
 
 
- 4. Execute
+ 4. Deploy with Docker compose
     `docker compose up`
 
- 5. Structure
-       
 
     
 
