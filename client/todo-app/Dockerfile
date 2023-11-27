@@ -5,9 +5,10 @@ RUN npm i
 
 ARG NG_APP_API_URL
 
+
 COPY . .
 
-RUN echo  NG_APP_API_URL=${NG_APP_API_URL} > .env
+ENV API_URL=${NG_APP_API_URL}
 
 RUN npm run build
 
